@@ -10,6 +10,9 @@
     "engines": {
         "node": ">=0.10.0"
     },
+    "scripts": {
+        "test": "node_modules/karma/bin/karma start test/karma.conf.js --single-run"
+    },
     "devDependencies": {
         "grunt": "~0.4.2",
         "grunt-contrib-jshint": "~0.10.0",
