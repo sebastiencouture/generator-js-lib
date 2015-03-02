@@ -3,11 +3,6 @@ var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 var yosay = require('yosay');
 var path = require('path');
-var changeCase = require('change-case');
-
-function libraryNameToFileName(libraryName) {
-    return changeCase.paramCase(libraryName);
-}
 
 module.exports = yeoman.generators.Base.extend({
     constructor: function () {
