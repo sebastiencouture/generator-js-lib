@@ -1,6 +1,6 @@
 # generator-js-lib [![Build Status](https://secure.travis-ci.org/sebastiencouture/generator-js-lib.png?branch=master)](https://travis-ci.org/sebastiencouture/generator-js-lib)
 
-> [Yeoman](http://yeoman.io) generator for UMD compliant front end Javascript library including Karma test runner
+> [Yeoman](http://yeoman.io) generator for UMD compliant Javascript library including Karma test runner
 
 ## Usage
 
