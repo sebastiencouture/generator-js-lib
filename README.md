@@ -25,8 +25,9 @@ yo js-lib
 Boilerplate code for a UMD compliant library will be generated. The generator also facilitates the following:
 
 1. Configures a Gruntfile for development, testing, jshint, and  distribution.
-2. Configures [Karma](http://karma-runner.github.io) to run all tests.
-3. Watches for changes and re-runs unit tests.
+2. Configures JSHint for source and tests.
+3. Configures [Karma](http://karma-runner.github.io) to run all tests.
+4. Watches for changes and re-runs unit tests.
 
 ## License
 
