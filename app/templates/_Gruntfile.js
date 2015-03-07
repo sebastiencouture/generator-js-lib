@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                 jshintrc: true
             },
 
-            lib: ["<%= srcDir %>/**/*.js"],
+            dev: ["<%= srcDir %>/**/*.js"],
             test: ["<%= testDir %>/**/*.spec.js"]
         },
 
@@ -71,14 +71,14 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            lib: {
+            dev: {
                 files: ["<%= srcDir %>/**/*.js", "<%= testDir %>/**/*.spec.js"],
                 tasks: ["karma:unit:run", "jshint"]
             }
         },
 
         connect: {
-            lib: {
+            dev: {
                 options: {
                     port: 8000
                 }

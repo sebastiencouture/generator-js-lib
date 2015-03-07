@@ -38,13 +38,6 @@ module.exports = yeoman.generators.Base.extend({
                 name: 'repoAccount',
                 message: 'What\'s your Github username',
                 store: true
-            },
-            {
-                type: 'String',
-                name: 'testFramework',
-                message: 'Choose test framework. mocha/jasmine',
-                default: 'jasmine',
-                store: true
             }
         ];
 
@@ -52,7 +45,6 @@ module.exports = yeoman.generators.Base.extend({
             this.libraryName = this._.slugify(this._.humanize(props.libraryName));
             this.authorName = props.authorName;
             this.repoAccount = props.repoAccount;
-            this.testFramework = props.testFramework;
 
             done();
         }.bind(this));
@@ -163,20 +155,17 @@ module.exports = yeoman.generators.Base.extend({
                 this.templatePath('travis.yml'),
                 this.destinationPath('.travis.yml')
             );
+        },
+
+        karmaFile: function() {
+            this.fs.copy(
+                this.templatePath('test/_karma.conf.js'),
+                this.destinationPath('test/karma.conf.js')
+            );
         }
     },
 
     install: function () {
-        this.composeWith('karma', {
-            options: {
-                'test-framework': this.testFramework,
-                'skip-install': this.options['skip-install'],
-                'base-path' : '../',
-                'app-files' : 'src/**/*.js',
-                'test-files' : 'test/**/*.spec.js'
-            }
-        });
-
         this.installDependencies({
             skipInstall: this.options['skip-install']
         });
