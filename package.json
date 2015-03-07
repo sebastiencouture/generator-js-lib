@@ -1,7 +1,7 @@
 {
   "name": "generator-js-lib",
-  "version": "0.2.0",
-  "description": "Yeoman generator for UMD compliant front end Javascript library including Karma test runner",
+  "version": "0.3.0",
+  "description": "Yeoman generator for UMD compliant Javascript library including Karma test runner",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
