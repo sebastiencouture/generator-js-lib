@@ -1,15 +1,19 @@
-<%= libraryName %>
+<%= libraryName %> [![Build Status](https://secure.travis-ci.org/<%= repoAccount %>/<%= repoName %>.png?branch=master)](https://travis-ci.org/<%= repoAccount %>/<%= repoName %>)
 ===
 
-### Getting Started
+## Usage
 
-### How to use
+### Example
 
 ```javascript
 
 ```
 
-### License
+## Installation
+
+## Browser Support
+
+## License
 
 The MIT License (MIT)
 

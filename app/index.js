@@ -135,7 +135,9 @@ module.exports = yeoman.generators.Base.extend({
                 this.destinationPath('README.md'),
                 {
                     libraryName: displayName,
-                    authorName: this.authorName
+                    authorName: this.authorName,
+                    repoAccount: this.repoAccount,
+                    repoName: this.libraryName
                 }
             );
         },
