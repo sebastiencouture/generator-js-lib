@@ -2,6 +2,7 @@
     "name": "<%= libraryName %>",
     "author": "<%= authorName %>",
     "version": "0.0.0",
+    "main": "dist/<%= libraryName %>.js",
     "repository": {
         "type": "git",
         "url": "git://github.com/<%= repoAccount %>/<%= libraryName %>.git"
